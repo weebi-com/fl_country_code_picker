@@ -276,6 +276,7 @@ const List<Map<String, dynamic>> codes = [
     "name": "Congo (Democratic Republic)",
     "code": "CD",
     "dial_code": "+243",
+    "national_significant_number": 9,
   },
   {
     "name": "Cook Islands",
@@ -293,6 +294,7 @@ const List<Map<String, dynamic>> codes = [
     "name": "Côte d'Ivoire",
     "code": "CI",
     "dial_code": "+225",
+    "national_significant_number": 8,
   },
   {
     "name": "Croatia",
@@ -496,6 +498,7 @@ const List<Map<String, dynamic>> codes = [
     "name": "Guinea",
     "code": "GN",
     "dial_code": "+224",
+    "national_significant_number": 9,
   },
   {
     "name": "Guinea-Bissau",
@@ -1075,6 +1078,7 @@ const List<Map<String, dynamic>> codes = [
     "name": "Senegal",
     "code": "SN",
     "dial_code": "+221",
+    "national_significant_number": 9,
   },
   {
     "name": "Serbia",

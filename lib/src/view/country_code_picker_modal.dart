@@ -1,6 +1,6 @@
 import 'package:circle_flags/circle_flags.dart';
-import 'package:fl_country_code_picker_weebi/fl_country_code_picker.dart';
-import 'package:fl_country_code_picker_weebi/src/widgets/widgets.dart';
+import 'package:fl_country_code_picker/fl_country_code_picker.dart';
+import 'package:fl_country_code_picker/src/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
@@ -228,15 +228,13 @@ class _CountryCodePickerModalState extends State<CountryCodePickerModal> {
                                 final country =
                                     widget.localize ? c.localize(context) : c;
 
-                                return country.code
-                                        .toLowerCase()
-                                        .contains(query.toLowerCase()) ||
-                                    country.dialCode
-                                        .toLowerCase()
-                                        .contains(query.toLowerCase()) ||
-                                    country.name
-                                        .toLowerCase()
-                                        .contains(query.toLowerCase());
+                                final normalizedQuery = CountryCode.normalizeText(query);
+                                return CountryCode.normalizeText(country.code)
+                                        .contains(normalizedQuery) ||
+                                    CountryCode.normalizeText(country.dialCode)
+                                        .contains(normalizedQuery) ||
+                                    CountryCode.normalizeText(country.name)
+                                        .contains(normalizedQuery);
                               },
                             ),
                           ),

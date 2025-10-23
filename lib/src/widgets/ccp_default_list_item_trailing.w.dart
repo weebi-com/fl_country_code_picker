@@ -1,4 +1,4 @@
-import 'package:fl_country_code_picker_weebi/fl_country_code_picker.dart';
+import 'package:fl_country_code_picker/fl_country_code_picker.dart';
 import 'package:flutter/material.dart';
 
 /// {@template ccp_default_list_item_trailing}

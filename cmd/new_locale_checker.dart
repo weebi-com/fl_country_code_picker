@@ -48,7 +48,7 @@ Future<void> main(List<String> args) async {
     ..split('\n');
 
   if (!pubLocales.contains(
-    '- packages/fl_country_code_picker_weebi/i18n/$code.json',
+    '- packages/fl_country_code_picker/i18n/$code.json',
   )) {
     print(
       'Please add the new localization code i18n file path '

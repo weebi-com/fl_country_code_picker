@@ -1,5 +1,6 @@
-## 0.2.2
+## 0.2.3
 
+- make it possible to search a country with an accent (e.g. Sénégal) by typing Sen 
 - weebize it
 
 ## 0.1.9+1

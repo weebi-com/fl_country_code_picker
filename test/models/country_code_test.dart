@@ -1,4 +1,4 @@
-import 'package:fl_country_code_picker_weebi/fl_country_code_picker.dart';
+import 'package:fl_country_code_picker/fl_country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -215,6 +215,31 @@ void main() {
             ),
           ),
         );
+      });
+    });
+
+    group('normalizeText', () {
+      test('removes accents from text and converts to lowercase', () {
+        expect(CountryCode.normalizeText('Sénégal'), equals('senegal'));
+        expect(CountryCode.normalizeText('Café'), equals('cafe'));
+        expect(CountryCode.normalizeText('Français'), equals('francais'));
+        expect(CountryCode.normalizeText('España'), equals('espana'));
+        expect(CountryCode.normalizeText('México'), equals('mexico'));
+        expect(CountryCode.normalizeText('São Paulo'), equals('sao paulo'));
+        expect(CountryCode.normalizeText('Zürich'), equals('zurich'));
+        expect(CountryCode.normalizeText('Côte d\'Ivoire'), equals('cote d\'ivoire'));
+      });
+
+      test('handles text without accents', () {
+        expect(CountryCode.normalizeText('United States'), equals('united states'));
+        expect(CountryCode.normalizeText('Canada'), equals('canada'));
+        expect(CountryCode.normalizeText('Germany'), equals('germany'));
+      });
+
+      test('handles empty and special characters', () {
+        expect(CountryCode.normalizeText(''), equals(''));
+        expect(CountryCode.normalizeText('123'), equals('123'));
+        expect(CountryCode.normalizeText('!@#'), equals('!@#'));
       });
     });
   });

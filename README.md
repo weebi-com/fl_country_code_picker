@@ -58,7 +58,7 @@ Call the modal for country code picker.
 ```
 To enable localization, add the following lines in your `MaterialApp`.
 ```dart
-import  'package:fl_country_code_picker_weebi/fl_country_code_picker.dart' as flc;
+import  'package:fl_country_code_picker/fl_country_code_picker.dart' as flc;
 ```
 ```dart
 MaterialApp(

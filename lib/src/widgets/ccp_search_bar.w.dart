@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:fl_country_code_picker_weebi/src/constants.dart';
+import 'package:fl_country_code_picker/src/constants.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 

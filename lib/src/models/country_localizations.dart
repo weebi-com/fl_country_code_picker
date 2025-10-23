@@ -189,11 +189,11 @@ class CountryLocalizations {
     late final String rawJson;
     try {
       rawJson = await svc.rootBundle.loadString(
-        'packages/fl_country_code_picker_weebi/i18n/${locale.languageCode}.json',
+        'packages/fl_country_code_picker/i18n/${locale.languageCode}.json',
       );
     } catch (_) {
       rawJson = await svc.rootBundle.loadString(
-        'packages/fl_country_code_picker_weebi/i18n/en.json',
+        'packages/fl_country_code_picker/i18n/en.json',
       );
     }
 

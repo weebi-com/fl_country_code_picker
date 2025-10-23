@@ -1,3 +1,7 @@
+## 0.2.1
+
+- weebize it
+
 ## 0.1.9+1
 - test: add a dart cli that checks if the new locale was implemented correctly
 

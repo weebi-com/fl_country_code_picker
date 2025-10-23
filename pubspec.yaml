@@ -1,8 +1,8 @@
-name: fl_country_code_picker
+name: fl_country_code_picker_weebi
 description: A Flutter package for showing a modal that contains country dial code. The user can also search for the available codes and select right from the modal.
-version: 0.1.9+1
-repository: https://github.com/fernan542/fl_country_code_picker
-issue_tracker: https://github.com/fernan542/fl_country_code_picker/issues
+version: 0.2.0
+repository: https://github.com/weebi-com/fl_country_code_picker
+issue_tracker: https://github.com/weebi-com/fl_country_code_picker/issues
 
 environment:
   sdk: ">=3.0.0 <4.0.0"

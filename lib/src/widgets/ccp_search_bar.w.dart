@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:fl_country_code_picker/src/constants.dart';
+import 'package:fl_country_code_picker_weebi/src/constants.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -31,6 +31,7 @@ class CcpSearchBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: TextField(
+        // ignore: lines_longer_than_80_chars
         autofocus: !kIsWeb && (Platform.isLinux || Platform.isMacOS || Platform.isWindows),
         onChanged: onChanged,
         decoration: decoration ?? kInputDecoration,

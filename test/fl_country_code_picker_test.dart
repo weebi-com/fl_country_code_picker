@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:fl_country_code_picker/fl_country_code_picker.dart';
+import 'package:fl_country_code_picker_weebi/fl_country_code_picker.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

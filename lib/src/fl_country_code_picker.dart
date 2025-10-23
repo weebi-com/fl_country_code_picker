@@ -1,7 +1,7 @@
 import 'dart:ui' as ui;
 
-import 'package:fl_country_code_picker/fl_country_code_picker.dart';
-import 'package:fl_country_code_picker/src/constants.dart';
+import 'package:fl_country_code_picker_weebi/fl_country_code_picker.dart';
+import 'package:fl_country_code_picker_weebi/src/constants.dart';
 import 'package:flutter/material.dart';
 
 /// {@template fl_country_code_picker}
@@ -163,7 +163,7 @@ class FlCountryCodePicker {
     bool fullScreen = false,
     ShapeBorder shape = kShape,
     double pickerMinHeight = 150,
-    double pickerMaxHeight = 500,
+    double pickerMaxHeight = 770,
     String? initialSelectedLocale,
     bool scrollToDeviceLocale = false,
     Color barrierColor = kBarrierColor,

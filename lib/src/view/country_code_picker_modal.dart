@@ -1,6 +1,6 @@
 import 'package:circle_flags/circle_flags.dart';
-import 'package:fl_country_code_picker/fl_country_code_picker.dart';
-import 'package:fl_country_code_picker/src/widgets/widgets.dart';
+import 'package:fl_country_code_picker_weebi/fl_country_code_picker.dart';
+import 'package:fl_country_code_picker_weebi/src/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
